@@ -13,12 +13,10 @@ end
 
 
 def words_five_letters_long(text)
-  
+  text.scan(/\b\w{5}\b/)
 end
 
-#words_string = "extreme briny crepe parking snaps grouping snafu round dog be fork spoon"
 
-#words_five_letters_long(words_string)
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   first_letter = text.scan(/\w+/)[0]
